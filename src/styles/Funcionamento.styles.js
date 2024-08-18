@@ -56,4 +56,35 @@ export const PaginaFuncionamento = styled.main`
         align-items: center;
         gap: 3rem;
     }
+
+    @media (width <= 480px){
+        section{
+            padding-block: 4rem;
+        }
+        
+        #parte1{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            div{
+                p{
+                    font-size: 1.125rem;
+                    max-width: 25.75rem;
+                }
+            }
+
+            img{
+                width: 22.5rem;
+            }
+        }
+
+        #parte2{
+            gap: 2.25rem;
+
+            img{
+                max-width: 19.25rem;
+            }
+        }
+    }
 `
