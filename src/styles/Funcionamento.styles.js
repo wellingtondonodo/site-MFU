@@ -17,7 +17,7 @@ export const PaginaFuncionamento = styled.main`
             gap: 2.25rem;
 
             p{
-                width: 37.875rem;
+                max-width: 37.875rem;
                 font-family: "Poppins";
                 text-align: justify;
                 font-weight: 300;

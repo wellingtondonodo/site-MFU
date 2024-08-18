@@ -6,8 +6,8 @@ export const PaginaInicio = styled.main`
         text-align: center;
         background: url(${FundoBanana}) no-repeat center;
         background-size: cover;
-        padding-bottom: 13.5rem;
         padding-top: 12rem;
+        padding-bottom: 13.5rem;
 
         h1{
             font-family: "Prompt", sans-serif;
@@ -33,7 +33,7 @@ export const PaginaInicio = styled.main`
     }
 
     #pergunta{
-        padding-block: 2.25rem;
+        margin-block: 2.25rem;
     }
 
     #container{
@@ -127,5 +127,82 @@ export const PaginaInicio = styled.main`
         margin-top: 3.75rem;
         margin-bottom: 6.25rem;
         gap: 8.5rem;
+    }
+
+    @media (width <= 430px){
+        #boas-vindas{
+            padding-top: 6.5rem;
+            padding-bottom: 11rem;
+        }
+
+        #pergunta{
+            margin-block: 3.125rem;
+        }
+
+        #container{
+            flex-direction: column;
+            align-items: center;
+            height: 53.625rem;
+            margin-bottom: 3.75rem;
+
+            #esquerda{
+                max-width: 24.125rem; 
+                height: 15.375rem;
+                box-shadow: 4px 0px 4px 0px rgba(0,0,0,0.25);
+
+                p{
+                    max-width: 21.125rem;
+                }
+            }
+
+            #direita{
+                flex-direction: column;
+                max-width: 24.125rem;
+                height: 38.375rem;
+            }
+        }
+
+        #texto1{
+            flex-direction: column-reverse;
+            gap: 1.75rem;
+            margin-bottom: 6.5rem;
+
+            p{
+                max-width: 22rem;
+                text-align: justify;
+                font-size: 1.125rem;
+            }
+
+            div{
+                gap: 2rem;
+            }
+
+            img{
+                width: 17.75rem;
+            }
+        }
+
+        .textos2{
+            gap: 2rem;
+
+            p{
+                max-width: 22rem;
+                text-align: justify;
+                font-size: 1.125rem;
+            }
+        }
+
+        #pedido{
+            margin-bottom: 6rem;
+            h2{
+                max-width: 16rem;
+            }
+        }
+
+        #links{
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+        }
     }
 `

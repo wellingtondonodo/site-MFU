@@ -31,8 +31,14 @@ export const GlobalStyle =  createGlobalStyle`
     }
 
     .botao:hover{
-        border: solid 2px black;
+        border: solid 2px #002500;
         color: #002500;
         background: #ffffff;
+    }
+
+    @media (width <= 430px) {
+        main{
+            overflow-x: hidden;
+        }
     }
 `
