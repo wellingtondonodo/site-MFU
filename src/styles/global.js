@@ -12,4 +12,27 @@ export const GlobalStyle =  createGlobalStyle`
         font-size: 1.875rem;
         font-weight: 500;
     }
+
+    .botao{
+        font-size: 1.25rem;
+        font-weight: 300;
+        font-family: "Poppins";
+        text-decoration: none;
+        color: #ffffff;
+        background: #002500;
+        width: 14rem;
+        height: 5.5rem;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 2px transparent;
+        transition: .25s;
+    }
+
+    .botao:hover{
+        border: solid 2px black;
+        color: #002500;
+        background: #ffffff;
+    }
 `
