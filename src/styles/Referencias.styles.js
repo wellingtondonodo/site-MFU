@@ -40,5 +40,25 @@ export const PaginaReferencias = styled.main`
         }
     }
     
-    
+    @media (width <= 480px){
+        section{
+            padding-block: 4rem;
+            gap: 1rem;
+
+            h2{
+                max-width: 22rem;
+                margin-bottom: 3rem;
+            }
+
+            a{
+                max-width: 24.5rem;
+                text-align: center;
+            }
+
+            img{
+                max-width: 24rem;
+            }
+        }
+        
+    }
 `
