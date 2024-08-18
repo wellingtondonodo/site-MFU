@@ -29,4 +29,30 @@ export const PaginaMateriais = styled.main`
             }
         }
     }
+
+    @media (width <= 480px){
+        section{
+            flex-direction: column;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+
+            p{
+                text-align: center;
+                font-size: 1.5rem;
+                max-width: 23.5rem;
+                margin-bottom: .5rem;
+            }
+
+            img{
+                max-width: 26.5rem;
+                margin-top: 1.75rem;
+            }
+
+            #texto{
+                div{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
 `
