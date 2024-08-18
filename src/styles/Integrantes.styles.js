@@ -50,4 +50,27 @@ export const PaginaIntegrantes = styled.main`
             max-width: 9.813rem;
         }
     }
+
+    @media (width <= 480px){
+        section{
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            min-height: 0;
+        }
+
+        #texto{
+            margin-bottom: 2rem;
+
+            p{
+                max-width:25rem;
+                font-size: 1.125rem;
+                text-align: center;
+            }
+        }
+
+        #integrantes{
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
 `
