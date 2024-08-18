@@ -36,7 +36,7 @@ export const GlobalStyle =  createGlobalStyle`
         background: #ffffff;
     }
 
-    @media (width <= 430px) {
+    @media (width <= 480px) {
         main{
             overflow-x: hidden;
         }

@@ -129,7 +129,7 @@ export const PaginaInicio = styled.main`
         gap: 8.5rem;
     }
 
-    @media (width <= 430px){
+    @media (width <= 480px){
         #boas-vindas{
             padding-top: 6.5rem;
             padding-bottom: 11rem;

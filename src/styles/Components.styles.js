@@ -30,7 +30,7 @@ export const Head = styled.header`
         display: none;
     }
 
-    @media (width <= 430px) {
+    @media (width <= 480px) {
         .menu, .menuActive{
             display: flex;
             justify-content: space-between;
@@ -151,7 +151,7 @@ export const Foot = styled.footer`
         right: 0;
     }
 
-    @media (width <= 430px){
+    @media (width <= 480px){
         p{
             width: 16.375rem;
             font-size: 1.25rem;
