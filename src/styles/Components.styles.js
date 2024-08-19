@@ -136,7 +136,7 @@ export const Foot = styled.footer`
     ::before, ::after{
         content: '';
         position: absolute;
-        width: calc(50% - 9rem);
+        width: calc(50% - 11rem);
         height: 1px;
         top: 50%;
         background: #F6F6F6;
