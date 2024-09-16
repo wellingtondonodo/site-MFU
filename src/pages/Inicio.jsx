@@ -44,7 +44,7 @@ export default function Inicio() {
         <div className="textos2" id="pedido">
             <h2>Faça Seu Pedido Hoje Mesmo!</h2>
             <p>Acelere o amadurecimento dos seus alimentos com nosso produto inovador. Compre agora na nossa loja online e ganhe em praticidade!</p>
-            <a href="/funcionamento" className="botao">Pedido</a>
+            <Link to="/funcionamento" className="botao">Pedido</Link>
         </div>
         <h2>Veja Mais</h2>
         <div id="links">
