@@ -2,12 +2,10 @@ import styled from "styled-components"
 
 export const PaginaMateriais = styled.main`
     min-height: 100vh;
-    section{
+    div{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 9.5rem;
-        padding-bottom: 11.5rem;
 
         p{
             font-family: "Poppins";
@@ -21,6 +19,7 @@ export const PaginaMateriais = styled.main`
 
         img{
             object-fit: contain;
+            
         }
 
         #texto{
@@ -28,7 +27,55 @@ export const PaginaMateriais = styled.main`
                 margin-top: 3.5rem;
             }
         }
+
+         .container-slider {
+
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+            .container-images {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 700px;
+        }
+
+            .slider {
+            opacity: 0;
+            transition: opacity .2s;
+            position: absolute;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+            .on {
+            opacity: 1;
+        }
+
+            #prev-button, #next-button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+            #prev-button img, #next-button img {
+            width: 100%;
+            height: 100%;
+        }
+
+            #prev-button {
+            transform: rotate(180deg);
+        }
     }
+       
 
     @media (width <= 480px){
         section{

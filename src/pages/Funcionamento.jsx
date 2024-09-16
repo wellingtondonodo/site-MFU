@@ -17,20 +17,10 @@ export default function Funcionamento() {
           </div>
           <img src={Madura} alt="" />
         </div>
-        <div id="parte2">
-          <h2>Ideal para vários alimentos</h2>
-          <div>
-            <h3>Bananas</h3>
-            <h3>Abacates</h3>
-            <h3>Tomates</h3>
-            <h3>Mangas</h3>
-          </div>
-          <h2>E muito mais!</h2>
-          <img src={Frutas} alt="" />
-        </div>
+
         <div id="parte3">
           <h2>Faça seu pedido aqui:</h2>
-          <a href="" className="botao">Pedido</a>
+          <a href="https://www.banasil.com.br/" target="_blank" className="botao">Pedido</a>
         </div>
       </section>
       <GlobalStyle/>
