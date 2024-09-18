@@ -13,13 +13,13 @@ export const PaginaMateriais = styled.main`
             font-weight: 300;
         }
 
-        h2{
-            text-align: center;
+        h2 {
+            margin-top: 6rem;
         }
 
         img{
             object-fit: contain;
-            
+            height: 25rem;
         }
 
         #texto{
@@ -29,12 +29,12 @@ export const PaginaMateriais = styled.main`
         }
 
          .container-slider {
-
             display: flex;
             width: 100%;
             min-height: 100vh;
             align-items: center;
             justify-content: center;
+            margin-top: -15rem;
             gap: 1rem;
         }
 
@@ -74,7 +74,16 @@ export const PaginaMateriais = styled.main`
             #prev-button {
             transform: rotate(180deg);
         }
+
+        
     }
+    .container-text {
+            h3{
+                font-size: 1.5rem;
+                font-family: "Poppins";
+                
+            
+        }
        
 
     @media (width <= 480px){

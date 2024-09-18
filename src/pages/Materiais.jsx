@@ -2,15 +2,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { GlobalStyle } from "../styles/global";
 import { PaginaMateriais } from "../styles/Materiais.styles";
-import Arduino from "/aa.png";
-import Sensor from "/cc.png";
-import Placa from "/ee.png";
-import Cabo from "/bb.png";
+import Arduino from "/Arduino.png";
+import Sensor from "/sensor.png";
+import Placa from "/placa.png";
+import Cabo from "/cabos.png";
 import Caixa from "/caixa.png";
-import Tela from "/tt.png"
-import Blut from "/ff.png"
-
-
+import Tela from "/display.png.png"
+import Blut from "/modulo.png"
 
 import setaD from "/seta-direita.png";
 import setaE from "/seta-esquerda.png";
@@ -45,11 +43,15 @@ export default function Materiais() {
     <PaginaMateriais>
       <Header />
       <div>
+      <h2>MATERIAS UTILIZADOS</h2>
+      </div>
+      <div>
+      
         <div className="container-slider">
           <button id="prev-button" onClick={prevImage}>
             <img src={setaD} alt="prev-button" />
           </button>
-          <div className="container-images">
+          <div className="container-images">           
             {images.map((image, index) => (
               <img
                 key={index}
@@ -64,6 +66,11 @@ export default function Materiais() {
             <img src={setaD} alt="next-button" />
           </button>
         </div>
+      </div>
+      <div className="container-text">
+          <h3>Arduino Uno:</h3>
+          <p>O Arduino Uno é uma placa simples para criar projetos eletrônicos interativos e aprender programação.</p>
+          <h3>Valor: 54,90</h3>
       </div>
       <GlobalStyle />
       <Footer />
