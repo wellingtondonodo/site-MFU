@@ -9,12 +9,15 @@ import Cabo from "/cabos.jpeg";
 import Caixa from "/caixa.png";
 import Tela from "/tela.jpeg"
 import Blut from "/blutu.jpeg";
-
 import setaD from "/seta-direita.png";
 import setaE from "/seta-esquerda.png";
 import React, { useEffect, useState } from 'react';
 
+
+
+
 export default function Materiais() {
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const data = [
@@ -56,7 +59,6 @@ export default function Materiais() {
     },
   ];
   
-
   const nextItem = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
@@ -69,34 +71,34 @@ export default function Materiais() {
     const script = document.createElement('script');
     script.src = '/src/pages/script.js'; 
     script.defer = true;
-    document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
+
+   
   }, []);
 
   return (
     <PaginaMateriais>
-    <Header />
-      <div className="container-slider">
-        <button id="prev-button" onClick={prevItem}>
-          <img src={setaE} alt="prev-button" />
-        </button>
-        
-        <div className="content">
-          <h2>{data[currentIndex].title}</h2>
-          <img src={data[currentIndex].image} alt={data[currentIndex].title} />
-          <p>{data[currentIndex].description}</p> {/* Exibe a descrição */}
-          <p><strong>{data[currentIndex].price}</strong></p> {/* Exibe o preço */}
+      <Header/>
+      <section>
+        <div className="container-slider">
+          <button id="prev-button" onClick={prevItem}>
+            <img src={setaE} alt="prev-button" />
+          </button>
+          
+          <div className="content">
+            <h2>{data[currentIndex].title}</h2>
+            <img className="Carrosel" src={data[currentIndex].image} alt={data[currentIndex].title} />
+            <p>{data[currentIndex].description}</p> {/* Exibe a descrição */}
+            <p><strong>{data[currentIndex].price}</strong></p> {/* Exibe o preço */}
+          </div>
+          
+          <button id="next-button" onClick={nextItem}>
+            <img src={setaD} alt="next-button" />
+          </button>
         </div>
-        
-        <button id="next-button" onClick={nextItem}>
-          <img src={setaD} alt="next-button" />
-        </button>
-      </div>
-      <GlobalStyle />
-      <Footer />
+      </section>
+      <GlobalStyle/>
+      <Footer/>
     </PaginaMateriais>
   );
-}  
+}
