@@ -3,9 +3,11 @@ import styled from "styled-components"
 export const PaginaMateriais = styled.main`
     min-height: 100vh;
     div{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+       display: flex;
+       
+        align-items: center;  
+        justify-content: center;
+        height: 100vh;
 
         p{
             font-family: "Poppins";
@@ -21,24 +23,42 @@ export const PaginaMateriais = styled.main`
             object-fit: contain;
             height: 25rem;
         }
+        
 
-        #texto{
-            div{
-                margin-top: 3.5rem;
-            }
-        }
-
-         .container-slider {
+        .container-slider {
             display: flex;
-            width: 100%;
-            min-height: 100vh;
+            flex-direction: row; 
             align-items: center;
             justify-content: center;
-            margin-top: -15rem;
-            gap: 1rem;
+            width: 100%;
         }
 
-            .container-images {
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px; 
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 300px; 
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .container-images {
             position: relative;
             display: flex;
             align-items: center;
@@ -46,7 +66,7 @@ export const PaginaMateriais = styled.main`
             width: 700px;
         }
 
-            .slider {
+        .slider {
             opacity: 0;
             transition: opacity .2s;
             position: absolute;
@@ -54,61 +74,41 @@ export const PaginaMateriais = styled.main`
             border-radius: 10px;
         }
 
-            .on {
+        .on {
             opacity: 1;
         }
 
-            #prev-button, #next-button {
-            width: 30px;
-            height: 30px;
-            border: none;
+       #prev-button, #next-button {
             background-color: transparent;
+            border: none;
             cursor: pointer;
-        }
+            position: absolute;
+            top: 75%; 
+            transform: translateY(-75%); 
 
-            #prev-button img, #next-button img {
-            width: 100%;
-            height: 100%;
-        }
-
-            #prev-button {
-            transform: rotate(180deg);
-        }
-
-        
     }
-    .container-text {
+
+        #prev-button {
+            left: 21rem; 
+        } 
+
+        #next-button {
+            right: 20rem; 
+        }
+
+        #prev-button img, #next-button img {
+            width: 40px;
+            height: 40px;
+        }
+    
+    }
+        .container-text {
             h3{
                 font-size: 1.5rem;
                 font-family: "Poppins";
-                
+            }  
             
         }
        
 
-    @media (width <= 480px){
-        section{
-            flex-direction: column;
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-
-            p{
-                text-align: center;
-                font-size: 1.5rem;
-                max-width: 23.5rem;
-                margin-bottom: .5rem;
-            }
-
-            img{
-                max-width: 26.5rem;
-                margin-top: 1.75rem;
-            }
-
-            #texto{
-                div{
-                    margin-top: 2rem;
-                }
-            }
-        }
-    }
-`
+ `  
