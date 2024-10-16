@@ -1,4 +1,4 @@
-import Header from "../components/Header"
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { GlobalStyle } from "../styles/global";
 import { PaginaMateriais } from "../styles/Materiais.styles";
@@ -7,16 +7,13 @@ import Sensor from "/sensor.jpeg";
 import Placa from "/placa.png";
 import Cabo from "/cabos.jpeg";
 import Caixa from "/caixa.png";
-import Tela from "/tela.jpeg"
+import Tela from "/tela.jpeg";
 import Blut from "/blutu.jpeg";
 import setaD from "/seta-direita.png";
 import setaE from "/seta-esquerda.png";
 import React, { useEffect, useState } from 'react';
 
-
-
-
-export default function Materiais() {
+export default function Materiais({ darkMode }) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -71,14 +68,11 @@ export default function Materiais() {
     const script = document.createElement('script');
     script.src = '/src/pages/script.js'; 
     script.defer = true;
-
-
-   
   }, []);
 
   return (
-    <PaginaMateriais>
-      <Header/>
+    <PaginaMateriais className={darkMode ? 'dark' : ''}>
+      <Header darkMode={darkMode} />
       <section>
         <div className="container-slider">
           <button id="prev-button" onClick={prevItem}>
@@ -97,8 +91,8 @@ export default function Materiais() {
           </button>
         </div>
       </section>
-      <GlobalStyle/>
-      <Footer/>
+      <GlobalStyle />
+      <Footer />
     </PaginaMateriais>
   );
 }

@@ -91,6 +91,14 @@ export const PaginaMateriais = styled.main`
                 margin-bottom: .5rem;
             }
             
+             #prev-button{
+                
+                left: 1rem;
+            }
+
+            #next-button{
+                right: 1rem;
+            }
       
 
         }
