@@ -57,6 +57,13 @@ export const PaginaFuncionamento = styled.main`
         gap: 3rem;
     }
 
+    video {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+
     @media (width <= 480px){
         section{
             padding-block: 4rem;
@@ -69,8 +76,9 @@ export const PaginaFuncionamento = styled.main`
 
             div{
                 p{
-                    font-size: 1.125rem;
-                    max-width: 25.75rem;
+                    font-size: 1rem;
+                    max-width: 26;
+                    margin-bottom: 25px;
                 }
             }
 
@@ -82,8 +90,11 @@ export const PaginaFuncionamento = styled.main`
         #parte2{
             gap: 2.25rem;
 
-            img{
-                max-width: 19.25rem;
+        }
+        #parte3{
+            video {
+                width: 100%;
+                height: auto;
             }
         }
     }

@@ -5,6 +5,7 @@ import Materiais from "./pages/Materiais"
 import Referencias from "./pages/Referencias"
 import Integrantes from "./pages/Integrantes"
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
   {
     path: '/integrantes',
     element: <Integrantes/>
-  }
+  },
+  
+  
+  
+
 ])
 
 export default function App() {

@@ -19,6 +19,7 @@ export default function Header() {
             <NavLink to="/" className={({ isActive }) => (isActive ? 'dentro' : '')}><img src={Logo} alt="Logo MFU" /></NavLink>
             <NavLink to="/referencias" className={({ isActive }) => (isActive ? 'dentro' : '')}>Referencias</NavLink>
             <NavLink to="/integrantes" className={({ isActive }) => (isActive ? 'dentro' : '')}>Integrantes</NavLink>
+          
         </nav>
 
         <div className={active ? 'menuActive' : 'menu'}>
@@ -32,6 +33,7 @@ export default function Header() {
           <NavLink to="/materiais" className={({ isActive }) => (isActive ? 'dentro' : '')}>Materiais</NavLink>
           <NavLink to="/referencias" className={({ isActive }) => (isActive ? 'dentro' : '')}>Referencias</NavLink>
           <NavLink to="/integrantes" className={({ isActive }) => (isActive ? 'dentro' : '')}>Integrantes</NavLink>
+          
         </div>
 
         <GlobalStyle/>
