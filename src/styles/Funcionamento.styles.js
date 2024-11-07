@@ -57,11 +57,7 @@ export const PaginaFuncionamento = styled.main`
         gap: 3rem;
     }
 
-    video {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
+    
 
 
     @media (width <= 480px){
@@ -85,10 +81,19 @@ export const PaginaFuncionamento = styled.main`
             img{
                 width: 22.5rem;
             }
+
+            video {
+                width: 100%;
+                height: auto;
+            }
         }
 
         #parte2{
             gap: 2.25rem;
+            video {
+                width: 100%;
+                height: auto;
+            }
 
         }
         #parte3{
